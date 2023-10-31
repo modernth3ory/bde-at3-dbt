@@ -17,5 +17,12 @@ clean-targets:
 
 models:
   bdeat3dbt:
-    example:
+    staging:
       +materialized: view
+      +schema: staging
+    datamart:
+      +materialized: view
+      +schema: datamart
+    warehouse:
+      +materialized: view
+      +schema: warehouse

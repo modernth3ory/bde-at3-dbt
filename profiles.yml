@@ -1,0 +1,12 @@
+bdeat3dbt:
+  outputs:
+    dev:
+      type: postgres
+      threads: 4
+      host: 35.244.84.166
+      port: 5432
+      user: postgres
+      pass: xov81haf
+      dbname: postgres
+      schema: public
+  target: dev
