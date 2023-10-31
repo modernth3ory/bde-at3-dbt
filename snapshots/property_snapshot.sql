@@ -1,3 +1,11 @@
+
+-- Universtiy of Technology Sydney
+-- Big Data Engineering, 2023
+
+-- Nathan Collins
+-- 12062131
+
+
 {% snapshot property_snapshot %}
 
 {{
@@ -18,8 +26,13 @@ select
   accommodates
 from {{ source('raw', 'listings') }}
 
---  Previous inclusions
 
+
+
+
+
+
+--  Omitted:
 --  LISTING_ID,
 --  SCRAPE_ID,
 --  SCRAPED_DATE,

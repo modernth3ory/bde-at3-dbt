@@ -1,7 +1,13 @@
+
 -- University of Technology Sydney
 -- Big Data Engineering, 2023
 -- Nathan Collins
 -- 12062131
+
+
+
+
+
 
 -- Datamart dm_property_type
 

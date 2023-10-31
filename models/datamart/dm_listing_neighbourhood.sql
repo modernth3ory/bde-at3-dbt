@@ -1,7 +1,10 @@
+
 -- University of Technology Sydney
 -- Big Data Engineering, 2023
 -- Nathan Collins
 -- 12062131
+
+
 
 {{ config(materialized='table') }}
 -- Set the materialization type for the SQL model to 'table'.

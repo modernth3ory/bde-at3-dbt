@@ -50,8 +50,6 @@
     materialized='view'
 ) }}
 
-
-
 -- Step 1: Omit duplicates.
 ----------------------------------------------------------------------#
 
@@ -59,8 +57,6 @@ WITH deduplicated_host AS (
     SELECT DISTINCT *
     FROM raw.host_snapshot
 ),
-
-
 
 -- Step 2: Requesting variables from the host_snapshot. 
 -- Handling invalid numeric values and flexible date formats.
@@ -90,8 +86,6 @@ host_filtered_and_cleaned AS (
     FROM deduplicated_host
 )
 
-
-
 -- Step 3: Select the final result.
 ----------------------------------------------------------------------#
 
@@ -103,3 +97,6 @@ SELECT
     host_is_superhost, 
     host_neighbourhood
 FROM host_filtered_and_cleaned
+
+
+

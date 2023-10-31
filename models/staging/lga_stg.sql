@@ -51,7 +51,7 @@
 
 WITH transformed_lga AS (
     SELECT
-        'LGA' || lga_code AS lga_code, -- Prepend "LGA" to lga_code
+        'LGA' || lga_code AS lga_code, 
         lga_name,
         ingestion_datetime
     FROM raw.lga
@@ -64,3 +64,6 @@ WITH transformed_lga AS (
 
 SELECT *
 FROM transformed_lga
+
+
+
